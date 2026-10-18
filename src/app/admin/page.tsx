@@ -15,6 +15,7 @@ import {
   ArrowUpRight,
   ShieldAlert,
   Award,
+  Clock,
 } from 'lucide-react';
 import { StatCard } from '@/components/StatCard';
 import { Badge, StatusBadge } from '@/components/Badge';
@@ -177,6 +178,13 @@ export default function AdminDashboardPage() {
           >
             <CalendarPlus className="h-3.5 w-3.5 text-amber-500" />
             <span>Create Test</span>
+          </Link>
+          <Link
+            href="/admin/affiliation-requests"
+            className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold rounded-lg bg-amber-950/60 hover:bg-amber-900/60 text-amber-300 border border-amber-600/40 transition shadow-sm"
+          >
+            <Clock className="h-3.5 w-3.5 text-amber-400" />
+            <span>Affiliation Requests</span>
           </Link>
         </div>
       </div>

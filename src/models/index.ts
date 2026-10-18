@@ -12,3 +12,4 @@ export * from './TestResult';
 export * from './OrganizationSettings';
 export * from './PublicWebsiteContent';
 export * from './AuditLog';
+export * from './AffiliationRequest';

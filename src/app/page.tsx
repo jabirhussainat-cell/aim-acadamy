@@ -20,6 +20,7 @@ import {
   Trophy,
   Users2,
   Sparkles,
+  Building2,
 } from 'lucide-react';
 
 export const revalidate = 60; // ISR cache 60s
@@ -244,19 +245,30 @@ export default async function HomePage() {
             <AimLogo size="md" subtitle="Govt. Reg No: WYD/176/2026" />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+          <nav className="hidden lg:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-slate-300">
             <a href="#showcase" className="hover:text-amber-400 transition">Official Announcements</a>
             <a href="#about" className="hover:text-amber-400 transition">About Academy</a>
             <a href="#leadership" className="hover:text-amber-400 transition">Leadership</a>
             <a href="#disciplines" className="hover:text-amber-400 transition">Disciplines</a>
             <a href="#grading" className="hover:text-amber-400 transition">Belt Grading</a>
+            <Link href="/unit-affiliation" className="text-amber-400 hover:text-amber-300 font-bold transition">
+              Unit Affiliation
+            </Link>
             <a href="#contact" className="hover:text-amber-400 transition">Contact</a>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
+            <Link
+              href="/unit-affiliation"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-amber-300 bg-amber-950/50 hover:bg-amber-900/60 border border-amber-500/40 rounded-xl transition shadow-sm uppercase tracking-wider"
+            >
+              <Building2 className="h-3.5 w-3.5 text-amber-400" />
+              <span>Affiliate Unit</span>
+            </Link>
+
             <a
               href="tel:8943839386"
-              className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold text-amber-300 bg-amber-950/40 hover:bg-amber-900/50 border border-amber-600/40 rounded-xl transition shadow-sm"
+              className="hidden md:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700 rounded-xl transition"
             >
               <Phone className="h-3.5 w-3.5 text-rose-400" />
               <span>8943839386</span>
@@ -264,7 +276,7 @@ export default async function HomePage() {
 
             <Link
               href="/login"
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold text-white bg-rose-600 hover:bg-rose-500 rounded-xl transition shadow-md shadow-rose-950 uppercase tracking-wider"
+              className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold text-white bg-rose-600 hover:bg-rose-500 rounded-xl transition shadow-md shadow-rose-950 uppercase tracking-wider"
             >
               <span>Portal Login</span>
               <ChevronRight className="h-3.5 w-3.5" />
@@ -312,6 +324,14 @@ export default async function HomePage() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/unit-affiliation"
+              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-black text-xs uppercase tracking-wider shadow-xl shadow-amber-950 transition-all hover:scale-105"
+            >
+              <Building2 className="h-4 w-4" />
+              <span>Apply for Unit Affiliation</span>
+            </Link>
+
             <Link
               href="/login"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider shadow-xl shadow-rose-950 transition-all hover:scale-105"
@@ -908,6 +928,14 @@ export default async function HomePage() {
 
                 <div className="space-y-3">
                   <Link
+                    href="/unit-affiliation"
+                    className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-black text-xs uppercase tracking-wider shadow-lg shadow-amber-950 transition"
+                  >
+                    <Building2 className="h-4 w-4" />
+                    <span>Apply for Unit Affiliation</span>
+                  </Link>
+
+                  <Link
                     href="/login"
                     className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-rose-950 transition"
                   >
@@ -942,7 +970,10 @@ export default async function HomePage() {
             Helpline: 8943839386 | Malappuram • Kozhikode • Wayanad
           </p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
+            <Link href="/unit-affiliation" className="text-slate-300 hover:text-amber-400 transition font-semibold text-xs">
+              Apply for Affiliation
+            </Link>
             <Link href="/login" className="text-amber-400 hover:text-amber-300 transition font-bold uppercase tracking-wider text-xs">
               Portal Login →
             </Link>

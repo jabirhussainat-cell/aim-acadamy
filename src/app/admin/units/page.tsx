@@ -12,6 +12,7 @@ import {
   Users,
   ShieldCheck,
   ShieldAlert,
+  Clock,
 } from 'lucide-react';
 import { StatusBadge } from '@/components/Badge';
 import { EmptyState } from '@/components/EmptyState';
@@ -85,7 +86,15 @@ export default function AdminUnitsPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 flex-wrap">
+          <Link
+            href="/admin/affiliation-requests"
+            className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold rounded-lg bg-amber-950/60 hover:bg-amber-900/60 text-amber-300 border border-amber-600/40 transition shadow-sm"
+          >
+            <Clock className="h-3.5 w-3.5 text-amber-400" />
+            <span>Affiliation Requests</span>
+          </Link>
+
           <a
             href="/api/export?type=units"
             className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition"

@@ -46,6 +46,7 @@ export function Sidebar({ role, isOpen, onClose }: SidebarProps) {
       subItems: [
         { label: 'All Units', href: '/admin/units', icon: Building2 },
         { label: 'Add Unit', href: '/admin/units/add', icon: PlusCircle },
+        { label: 'Affiliation Requests', href: '/admin/affiliation-requests', icon: ClipboardList },
       ],
     },
     {
